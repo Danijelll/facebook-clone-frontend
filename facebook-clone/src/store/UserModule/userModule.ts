@@ -20,6 +20,9 @@ const actions = {
     submitLogin ({ commit }: { commit: Function }, payload: any){
         AuthService.login(payload);
     },
+    submitRegister ({ commit }: { commit: Function }, payload: any){
+        AuthService.register(payload);
+    },
     // async getCurrentUserData({ commit }: { commit: Function }) {
     //     const user: IUserData = await UserService.getCurrentUser();
 

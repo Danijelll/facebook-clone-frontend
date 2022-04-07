@@ -28,7 +28,6 @@
 </template>
 
 <script>
-import AuthService from '../../services/AuthService';
 export default {
   name: "Register",
   data: () => ({
@@ -43,7 +42,8 @@ export default {
         email: this.email,
         password: this.password
       };
-      AuthService.register(userDTO)
+
+      this.$store.dispatch('submitRegister', userDTO);
     }
   },
 };
