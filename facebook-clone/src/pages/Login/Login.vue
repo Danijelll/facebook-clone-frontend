@@ -51,7 +51,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .routerLink {
   text-decoration: none;
   font-size: 13pt;

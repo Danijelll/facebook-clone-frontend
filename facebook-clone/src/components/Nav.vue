@@ -10,7 +10,7 @@ name:'Nav'
 }
 </script>
 
-<style>
+<style scoped>
 .wrapper{
     margin-bottom: 5px;
     background-color: #171717;

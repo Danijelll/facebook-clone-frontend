@@ -10,7 +10,7 @@ class AuthService {
                 const status = JSON.parse((response.status).toString());
 
                 if (status == '200') {
-                    router.push('/ok');
+                    router.push('/home');
                 }
             }).catch(function (error) {
                 console.log(error);
@@ -22,7 +22,7 @@ class AuthService {
                 const status = JSON.parse((response.status).toString());
 
                 if (status == '200') {
-                    router.push('/ok');
+                    router.push('/home');
                 }
             }).catch(function (error) {
                 console.log(error);
