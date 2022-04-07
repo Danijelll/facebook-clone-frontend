@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-      <h1>NAVNAVNAVNAV</h1>
+      
   </div>
 </template>
 
@@ -16,6 +16,6 @@ name:'Nav'
     background-color: #171717;
     color: white;
     width: 100%;
-    height: 45px;
+    height: 55px;
 }
 </style>

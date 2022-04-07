@@ -69,4 +69,11 @@ export default {
   font-size: 13pt;
   margin: 10px;
 }
+.input:focus{
+  outline: none;
+}
+.button{
+  font-size: 15pt;
+  margin: 10px;
+}
 </style>

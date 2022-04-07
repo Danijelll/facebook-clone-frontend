@@ -14,7 +14,7 @@
         placeholder="Password"
       />
 
-      <button @click="submitLogin" class="input">Login</button>
+      <button @click="submitLogin" class="button">Login</button>
 
       <router-link class="routerLink" to="/register">Register</router-link>
     </div>
@@ -56,7 +56,7 @@ export default {
   text-decoration: none;
   font-size: 13pt;
   margin-left: auto;
-  color: darkblue;
+  color: white;
 }
 .loginForm {
   border: 1px solid #171717;
@@ -69,6 +69,13 @@ export default {
 }
 .input {
   font-size: 13pt;
+  margin: 10px;
+}
+.input:focus{
+  outline: none;
+}
+.button{
+  font-size: 15pt;
   margin: 10px;
 }
 </style>
