@@ -1,0 +1,3 @@
+interface IUserStore {
+    currentUser: object;
+}

@@ -30,14 +30,25 @@ export default {
     password: "",
   }),
   methods: {
+    // submitLogin(){
+    //   const userDTO = {
+    //     username: this.username,
+    //     password: this.password
+    //   };
+    //   AuthService.login(userDTO)
+    // },
     submitLogin(){
       const userDTO = {
         username: this.username,
         password: this.password
       };
-      AuthService.login(userDTO)
+
+      this.$store.dispatch('submitLogin', userDTO);
     }
   },
+  mounted() {
+    console.log('aaa', this.$store.getters.getCurrentUser);
+  }
 };
 </script>
 
