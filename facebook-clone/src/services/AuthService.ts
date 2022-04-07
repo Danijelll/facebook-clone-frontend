@@ -16,6 +16,18 @@ class AuthService {
                 console.log(error);
             });
     }
+    async register(user: any) {
+        return axios.post(BASE_URL + '/register', user)
+            .then(function (response) {
+                const status = JSON.parse((response.status).toString());
+
+                if (status == '200') {
+                    router.push('/ok');
+                }
+            }).catch(function (error) {
+                console.log(error);
+            });
+    }
 }
 
 export default new AuthService();
