@@ -28,7 +28,6 @@
 </template>
 
 <script>
-import AuthService from '../../services/AuthService';
 export default {
   name: "Register",
   data: () => ({
@@ -43,13 +42,14 @@ export default {
         email: this.email,
         password: this.password
       };
-      AuthService.register(userDTO)
+
+      this.$store.dispatch('submitRegister', userDTO);
     }
   },
 };
 </script>
 
-<style>
+<style scoped>
 .routerLink {
   text-decoration: none;
   font-size: 13pt;
@@ -67,6 +67,13 @@ export default {
 }
 .input {
   font-size: 13pt;
+  margin: 10px;
+}
+.input:focus{
+  outline: none;
+}
+.button{
+  font-size: 15pt;
   margin: 10px;
 }
 </style>
